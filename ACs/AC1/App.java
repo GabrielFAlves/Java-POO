@@ -1,3 +1,4 @@
+package ACs.AC1;
 public class App {
     public static void main(String[] args) throws Exception {
         apNotas(8.5,7.5,9.5);
