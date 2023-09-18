@@ -22,7 +22,7 @@ public class Medico extends Pessoa {
     }
 
     public double calculaAtendimento(int numHoras) {
-        return this.valorHora = numHoras;
+        return this.valorHora * numHoras;
     }
 
     public void alocaConsultorio(Consultorio consultorio) {
@@ -35,7 +35,10 @@ public class Medico extends Pessoa {
 
     @Override
     public String toString() {
-        return "Médico" + super.toString() + "\n" + 
-        "Plano de Saude: " + this.crm;
+        return "Médico(a) " + super.toString() + "\n" +
+            "CRM: " + this.crm + "\n" +
+            "Especialidade: " + this.especialidade + "\n" +
+            "Valor por hora: R$" + this.valorHora + "\n" +
+            "Atende no consultorio " + this.consultorio;
     }
 }
