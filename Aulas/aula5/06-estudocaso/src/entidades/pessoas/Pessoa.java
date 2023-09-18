@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 import entidades.Endereco;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String nome, cpf;
     private Endereco endereco;
     private LocalDate dataNascimento;
@@ -26,12 +26,10 @@ public class Pessoa {
     // ctrl + shift + p: tostring
     @Override
     public String toString() {
-        return "{" +
-            " nome='" + this.nome + "'" +
-            ", cpf='" + this.cpf + "'" +
-            ", endereco='" + this.endereco + "'" +
-            ", dataNascimento='" + this.dataNascimento + "'" +
-            "}";
+        return this.nome + "\n" +
+            "CPF: " + this.cpf + "\n" +
+            "Endereco: " + this.endereco + "\n" +
+            "Data de Nascimento: " + this.getDataNascimento();
     }
 
 }
