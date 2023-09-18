@@ -3,7 +3,7 @@ package entidades.pessoas;
 import entidades.Pessoa;
 
 public class Tecnico extends Pessoa {
-    Tecnico(String nome, String corpo) {
+    public Tecnico(String nome, String corpo) {
         super(nome, corpo);
     }
 
